@@ -1,0 +1,35 @@
+{
+  "description": "",
+  "name": "BH_FacebookSpider",
+  "permissions": [
+  	"tabs",
+    "http://*/*",
+    "https://*/*"
+  ]
+  , "background": {
+    "scripts": ["jquery-1.9.1.min.js", 
+    			"log.js",
+    			"actionTable.js", 
+    			"background.js"]
+  },
+  "manifest_version": 2,
+  "version": "1.0.0"
+  
+  ,"content_scripts": [
+    {
+      "matches": ["http://www.facebook.com/*", "https://www.facebook.com/*"],
+      "js": ["jquery-1.9.1.min.js",
+      			"databaseHelper.js",
+      			"actionTable.js", 				
+				"contentScript.js" ]
+    }
+  ],
+ "page_action": {
+    "default_icon": {                    // optional
+      "19": "Icon-19.png",           // optional
+      "38": "Icon-38.png"            // optional
+    },
+    "default_title": "Facebook Spider",      // optional; shown in tooltip
+    "default_popup": "controlPanel.html"        // optional
+  }
+}
