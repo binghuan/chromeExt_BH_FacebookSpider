@@ -1,5 +1,11 @@
 # Facebook Spider Chrome Extension
 
+## Feature overview
+
+![chromeExt_BH_FacebookSpider — feature flow diagram](README-assets/project-preview.svg)
+
+Conceptual feature flow based on this repository; this is a documentation diagram, not an application screenshot.
+
 A Chrome extension tool to parse and analyze Facebook friendship networks by automatically crawling user profiles and collecting data about users and their friends.
 
 ## Features
